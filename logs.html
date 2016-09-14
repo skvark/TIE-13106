@@ -28,13 +28,21 @@
         <h1 id="project_title">Web2Print</h1>
         <a id="forkme_banner" href="https://github.com/skvark/TIE-13106">View on GitHub</a>
 
-        <ul class="nav nav-tabs">
-          <li class="nav-item"><a class="nav-link" href="index.html">What is this?</a></li>
-          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="technologies.html">Technologies</a></li>
-          <li class="nav-item"><a class="nav-link" href="charts.html">Burndown charts</a></li>
-          <li class="nav-item active"><a class="nav-link" href="logs.html">Hour logs</a></li>
-        </ul>
+          <button id="navbar-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                   
+          </button>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav nav-justified" >
+            <li class="non-active"><a href="index.html">What is this?</a></li>
+            <li class="non-active"><a href="team.html">Team</a></li>
+            <li class="non-active"><a href="technologies.html">Technologies</a></li>
+            <li class="non-active"><a href="charts.html">Burndown charts</a></li>
+            <li class="active"><a href="#">Hour logs</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -47,50 +55,193 @@
 
       <div class="panel-group" id="collapsible-logs" role="tablist" aria-multiselectable="true">
         <div id="week-1" class="panel panel-default">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="collapsible-logs" href="#week-1-body" aria-expanded="false">
           <div class="panel-heading" role="tab" id="week-1-heading">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="collapsible-logs" href="#week-1-body" aria-expanded="false">
-                Week 1 | 5.9. - 11.9.2016
-              </a>
+                Week 1
+              <span class="text-right">5.9. - 11.9.2016</span>
             </h4>
           </div>
+          </a>
           <div id="week-1-body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="week-1-heading">
             <div class='panel-body'>
-              <p>6.9.2016 - LEC : Everyone 2h</p>
-              <p>6.9.2016 - MEET : Boys 2h</p>
-              <p>7.9.2016 - MEET : Everyone 1h</p>
-              <p>7.9.2016 - OTH | Contact : Everyone 1h</p>
+              <div class="table-responsive"> 
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th>When?</th>
+                      <th>For how long?</th>
+                      <th>What?</th>
+                      <th>Who?</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>6.9.2016</td>
+                      <td>2h</td>
+                      <td>LEC</td>
+                      <td>Everyone</td>
+                    </tr>
+                    <tr>
+                      <td>6.9.2016</td>
+                      <td>2h</td>
+                      <td>MEET</td>
+                      <td>Joonas, Olli-Pekka, Lassi, Ilpo, Lari, Aleksi</td>
+                    </tr>
+                    <tr>
+                      <td>7.9.2016</td>
+                      <td>1h</td>
+                      <td>MEET</td>
+                      <td>Everyone</td>
+                    </tr>
+                    <tr>
+                      <td>7.9.2016</td>
+                      <td>1h</td>
+                      <td>OTH | Contact customer</td>
+                      <td>Everyone</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
         <div id="week-2" class="panel panel-default">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="collapsible-logs" href="#week-2-body" aria-expanded="false">
           <div class="panel-heading" role="tab" id="week-2-heading">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="collapsible-logs" href="#week-2-body" aria-expanded="false">
-                Week 2 | 12.9. - 18.9.2016
-              </a>
+                Week 2
+              <span class="text-right">12.9. - 18.9.2016</span>
             </h4>
           </div>
+          </a>
           <div id="week-2-body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="week-2-heading">
             <div class='panel-body'>
-              <p>13.9.2016 - OTH | Web pages: Nina 3h</p>
-              <p>13.9.2016 - MEET (with customer): Everyone 2h</p>
-              <p>14.9.2016 - LEC : Everyone 4h</p>
-              <p>14.9.2016 - OTH | Web pages: Olli-Pekka 1 h</p>
+              <div class="table-responsive">          
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>When?</th>
+                      <th>For how long?</th>
+                      <th>What?</th>
+                      <th>Who?</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>13.9.2016</td>
+                      <td>3h</td>
+                      <td>OTH | Web pages</td>
+                      <td>Nina</td>
+                    </tr>
+                    <tr>
+                      <td>13.9.2016</td>
+                      <td>2h</td>
+                      <td>Meet | Customer</td>
+                      <td>Everyone</td>
+                    </tr>
+                    <tr>
+                      <td>14.9.2016</td>
+                      <td>4h</td>
+                      <td>LEC</td>
+                      <td>Everyone</td>
+                    </tr>
+                    <tr>
+                      <td>14.9.2016</td>
+                      <td>1h</td>
+                      <td>OTH | Web pages</td>
+                      <td>Olli-Pekka</td>
+                    </tr>
+                    <tr>
+                      <td>14.9.2016</td>
+                      <td>2h</td>
+                      <td>OTH | Web pages</td>
+                      <td>Nina</td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
           </div>
         </div>
       </div>
-
-
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>Copyraitit ja semmotteet</p>
+      <div id="week-3" class="panel panel-default">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="collapsible-logs" href="#week-3-body" aria-expanded="false">
+        <div class="panel-heading" role="tab" id="week-3-heading">
+          <h4 class="panel-title">
+              Week 3
+            <span class="text-right">19.9. - 25.9.2016</span>
+          </h4>
+        </div>
+        </a>
+        <div id="week-3-body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="week-3-heading">
+          <div class='panel-body'>
+            <div class="table-responsive">          
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>When?</th>
+                    <th>For how long?</th>
+                    <th>What?</th>
+                    <th>Who?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div> 
       </div>
-    </footer>
+      <div id="week-4" class="panel panel-default">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="collapsible-logs" href="#week-4-body" aria-expanded="false">
+        <div class="panel-heading" role="tab" id="week-4-heading">
+          <h4 class="panel-title">            
+              Week 4
+            <span class="text-right">26.9. - 2.10.2016</span>
+          </h4>
+        </div>
+        </a>
+        <div id="week-4-body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="week-4-heading">
+          <div class='panel-body'>
+            <div class="table-responsive">          
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>When?</th>
+                    <th>For how long?</th>
+                    <th>What?</th>
+                    <th>Who?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Copyraitit ja semmotteet</p>
+    </div>
+  </footer>
 
 
 

@@ -61,7 +61,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  /*color:#222222;*/
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -279,7 +279,7 @@ Full-Width Styles
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #763626 no-repeat 95% 50%;
+  background: url('../images/blacktocat.png') #AA4B41 no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
@@ -429,29 +429,83 @@ Small Device Styles
 Custrom / Overridden Bootstrap
 *******************************************************************************/
 .jumbotron {
-  background-color: #2A3132 !important;
+  background-color: #2D3033 !important;
   padding-bottom: 1px  !important;
 }
+
 .jumbotron a{
-  color: #336B87;
+  color: #D4DDE1;
 }
-.jumbotron h1, h2{
-  color: #90AFC5 !important;
+.jumbotron h1{
+  color: #D4DDE1 !important;
   padding-top: 10px;
 }
 
-.nav-tabs {
+#navbar {
   margin-top: 30px;
-  border: none !important; 
+  margin-bottom: 10px;
+  border: none !important;
 }
 
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  background-color: #335252;
+  color: #D4DDE1;
+}
+.nav-justified > .non-active > a:hover,
+.nav-justified > .non-active > a:focus {
+  background-color: #AA4B41;
+  color: #D4DDE1;
+}
+
+
+.icon-bar {
+  background-color: #D4DDE1 !important;
+}
+
+.panel {
+  margin: 0 !important;
+  border-radius: 0px !important;
+}
+.panel-body {
+  padding: 0 !important;
+}
+.panel-heading {
+  background-color: #335252 !important;
+  border-radius: 0px !important;
+}
+.panel-title {
+  color: white !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+.panel-heading:hover {
+  background-color: #AA4B41 !important;
+}
+
+.table {
+  margin-bottom: 0 !important;
+}
+.table .thead {
+  background-color: #2D3033 !important;
+}
 
 /*******************************************************************************
 Other
 *******************************************************************************/
 footer {
-  background-color: #2A3132 !important;
-  color: #90AFC5;
+  background-color: #2D3033 !important;
+  color: #D4DDE1;
   padding: 20px;
   margin-top: 20px;
+}
+
+body h2 {
+  color: 335252;
+}
+
+.text-right {
+  float: right;
+  font-weight: normal; 
 }
