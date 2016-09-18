@@ -270,7 +270,7 @@ Full-Width Styles
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #A5C05B no-repeat 95% 50%;
+  background: url('../images/blacktocat.png') #5B7065 no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
@@ -421,15 +421,15 @@ Small Device Styles
 Custrom / Overridden Bootstrap
 *******************************************************************************/
 .jumbotron {
-  background-color: #232122 !important;
+  background-color: #04202C !important;
   padding-bottom: 1px !important;
 }
 
 .jumbotron a{
-  color: #B7B8B6;
+  color: #C9D1C8;
 }
 .jumbotron h1{
-  color: #DDDEDE !important;
+  color: white !important;
   padding-top: 10px;
 }
 
@@ -442,18 +442,18 @@ Custrom / Overridden Bootstrap
 .nav-justified > .active > a,
 .nav-justified > .active > a:hover,
 .nav-justified > .active > a:focus {
-  background-color: #3A5199;
+  background-color: #304040;
   color: white;
 }
 .nav-justified > .non-active > a:hover,
 .nav-justified > .non-active > a:focus {
-  background-color: #A5C05B;
+  background-color: #5B7065;
   color: white;
 }
 
 
 .icon-bar {
-  background-color: #DDDEDE !important;
+  background-color: #C9D1C8 !important;
 }
 
 .panel {
@@ -464,7 +464,7 @@ Custrom / Overridden Bootstrap
   padding: 0 !important;
 }
 .panel-heading {
-  background-color: #3A5199 !important;
+  background-color: #304040 !important;
   border-radius: 0px !important;
 }
 .panel-title {
@@ -473,7 +473,7 @@ Custrom / Overridden Bootstrap
   text-decoration: none !important;
 }
 .panel-heading:hover {
-  background-color: #A5C05B !important;
+  background-color: #5B7065 !important;
   /* color: #2F2E33 !important; */
 }
 
@@ -481,17 +481,18 @@ Custrom / Overridden Bootstrap
   margin-bottom: 0 !important;
 }
 
+
 /*******************************************************************************
 Other
 *******************************************************************************/
 
 body {
-  color: #232122 !important;
-  background: #212121;
+  color: #04202C !important;
+  background: white !important;
 }
 
 body h2 {
-  color: #232122;
+  color: #04202C;
 }
 
 html,
@@ -507,8 +508,8 @@ body {
 }
 
 footer {
-  background-color: #232122 !important;
-  color: #DDDEDE;
+  background-color: #04202C !important;
+  color: #C9D1C8;
   padding: 20px;
   height: auto;
 }
