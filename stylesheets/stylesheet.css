@@ -494,6 +494,9 @@ body {
 body h2 {
   color: #04202C;
 }
+body h4 {
+  color: #5B7065;
+}
 
 html,
 body {
@@ -511,6 +514,7 @@ footer {
   background-color: #04202C !important;
   color: #C9D1C8;
   padding: 20px;
+  margin-top: 30px;
   height: auto;
 }
 
