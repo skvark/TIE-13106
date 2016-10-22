@@ -40,7 +40,7 @@
             <li class="non-active"><a href="index.html">What is this?</a></li>
             <li class="non-active"><a href="team.html">Team</a></li>
             <li class="non-active"><a href="technologies.html">Technologies</a></li>
-            <li class="active"><a href="#">Burndown charts</a></li>
+            <li class="active"><a href="#">Burnup charts</a></li>
             <li class="non-active"><a href="logs.html">Hour logs</a></li>
           </ul>
         </div>
@@ -50,10 +50,43 @@
 
       <!-- Content -->
     <div class="container">
-      <h2>Burndown charts</h2>
-      <p><img src="images/burnup.png" alt="Burn up chart"></p>
-      <p><img src="images/bar_sprint1.png" alt="Palkkikuvaaja, josta ilmenee ensimmäisen sprintin itemien koot."></p>
+      <h2>Burnup charts</h2>
+      
+      <row>
+        <div class="col-sm-3">
+          <h3>Sprint 1</h3>
+          <a class="click-open">
+            <img class="chart" src="images/burnup.png" alt="Sprint 1, Burnup chart.">
+          </a>
+          <a class="click-open">
+            <img class="chart" src="images/bar_sprint1.png" alt="Sprint 1, Planned and implemented items.">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <h3>Sprint 2</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3>Sprint 3</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3>Sprint 4</h3>
+        </div>
+      </row>
     </div>
+
+    <!-- Creates the bootstrap modal where the image will appear -->
+    <div class="modal" id="imagemodal" aria-hidden="true">
+      <img src="" alt="" id="imagepreview" class="modal-content center-block">
+    </div>
+
+    <script type='text/javascript'>
+      $(".click-open").on("click", function() {
+        img_src = $(this).find("img").attr("src");
+        $('#imagepreview').attr('src', $(this).find("img").attr("src") );
+        $('#imagepreview').attr( 'alt', $(this).find("img").attr("alt") );
+        $('#imagemodal').modal('show');
+      });
+    </script>
 
     </div><!-- /Wrapper -->
 
