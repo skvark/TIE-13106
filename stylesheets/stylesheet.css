@@ -456,6 +456,9 @@ footer {
   height: auto;
 }
 
+.chart-col {
+  padding: 0 !important;
+}
 
 .text-right {
   float: right;
@@ -465,7 +468,7 @@ footer {
 .chart {
   width: 100%;
   max-width: 300px;
-  margin: 15px;
+  margin: 0px;
 }
 
 .chart:hover {
